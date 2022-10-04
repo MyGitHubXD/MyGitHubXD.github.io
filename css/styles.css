@@ -445,7 +445,6 @@ body {
 	align-items: center;
 	flex-wrap: nowrap;
 	padding-top: 322px;
-	height: 910px;
 }
 .intro-title {
 	width: 642px;
@@ -465,18 +464,7 @@ body {
 	background: none;
 	border: none;
 	filter: drop-shadow(-25px 15px 35px rgba(0, 0, 0, 0.75));
-}
-.intro-decoration {
-	width: max-content;
-	height: max-content;
-	font-family: 'Homenaje';
-	font-style: normal;
-	font-size: 24px;
-	line-height: 26px;
-	background: url(/img/svg/mouse.svg) no-repeat center left;
-	filter: drop-shadow( -3px 3px 5px rgba(0, 0, 0, 0.75));
-	padding-left: 26px;
-	margin-left: 20px;
+	margin-bottom: 120px;
 }
 
 /* Intro section end */
