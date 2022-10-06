@@ -389,6 +389,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 10;
 }
 .wrapper{
 	max-width: 1380px;
@@ -401,11 +402,13 @@ body {
 	justify-content: space-between;
 	padding-top: 20px;
 }
-
+.header-logo {
+	filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.70));
+}
 .nav-list{
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 5px;
+	padding-top: 8px;
 }
 .nav-item {
 	margin-left: 20px;
@@ -421,6 +424,7 @@ body {
 	color: white;
 	text-decoration: none;
 	padding: 5px 10px 0px 10px;
+	filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.70));
 }
 .nav-item-link:hover, .nav-item-link:focus, .nav-item-link:active {
 	border-radius: 25px;
@@ -437,14 +441,14 @@ body {
 	height: 100vh;
 	background: url(/img/baground-intro.png) no-repeat center;
 	background-size: cover;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 .wrapper-intro {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: nowrap;
-	padding-top: 322px;
+	padding-top: 35vh;
 }
 .intro-title {
 	width: 642px;
@@ -471,7 +475,6 @@ body {
 
 /* About-us section start */
 .wrapper-main {
-	height: fit-content;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -505,14 +508,21 @@ body {
 /* About-us section end */
 
 /* Product section start */
-
-.product-title {
+.product {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.product-title-bg {
 	width: 240px;
 	height: 75px;
 	background: #C7F9CC;
 	border-radius: 35px 50px 0px 50px;
 	padding: 10px 20px 0px 18px;
-	margin: 35px 0px 10px 485px;
+
+}
+.product-title {
 	font-family: 'Galada';
 	font-style: normal;
 	font-weight: 400;
@@ -522,6 +532,7 @@ body {
 	color: #22577A;
 }
 .wrapper-pic {
+	margin-top: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
@@ -558,7 +569,7 @@ body {
 	font-size: 64px;
 	line-height: 69px;
 	color: #22577A;
-	padding: 15px 156px 0px 156px;
+	padding: 20px 156px 0px 156px;
 }
 .contact-item {
 	color:#38A3A5;
@@ -610,12 +621,11 @@ body {
 
 .footer {
 	width: 100%;
-	height: 232px;
+	height: fit-content;
 	background-color: #22577A;
 	margin-top: 50px;
 }
 .footer-text {
-	width: 537px;
 	font-family: 'Fredoka';
 	font-style: normal;
 	font-weight: 400;
@@ -631,6 +641,7 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 30px;
 }
 .footer-contact-icon-item {
 	margin-left: 35px;
@@ -641,4 +652,236 @@ body {
 
 /* Footer end */
 
-/* Start end */
+@media only screen and (max-width: 1500px) {
+	.about-us {
+		width: 565px;
+		height: 285px;
+		margin-left: 35px;
+	}
+	.about-title {
+		font-size: 46px;
+	}
+	.about-subtitle {
+		width: 525px;
+		height: 180px;
+		font-size: 24px;
+		line-height: 25px;
+	}
+	.product-title-bg {
+		width: 165px;
+		height: 65px;
+		padding: 0px 0px 0px 10px;
+		margin-right: 20px;
+	}
+	.product-title {
+		text-align: left;
+		font-size: 46px;
+	}
+	.wrapper-pic {
+		margin-right: 20px;
+	}
+	.product-link {
+		width: fit-content;
+		height: fit-content;
+	}
+	.product-item-tokio {
+		width: 284px;
+		height: 427px;
+	}
+	.product-item-new-york {
+		width: 284px;
+		height: 427px;
+	}
+	.product-item-sweden {
+		width: 578px;
+		height: 387px;
+	}
+	.contact {
+		margin-left: 35px;
+	}
+	.contact-title {
+		font-size: 46px;
+		padding: 20px 126px 0px 126px;
+	}
+	.contact-item {
+		padding: 10px 0px 25px 25px;
+	}
+	.contact-input {
+		font-size: 20px;
+		width: 332px;
+	}
+	.contact-button {
+		width: 246px;
+		height: 60px;
+		font-size: 24px;
+		letter-spacing: 0.155em;
+		margin: 10px 25px 10px 74px;
+	}
+	.footer-text {
+		font-size: 24px;
+		line-height: 145%;
+		text-align: center;
+	}
+	.facebook-img {
+		width: 44px;
+		height: 44px;
+	}
+	.twitter-img {
+		width: 47px;
+		height: 38px;
+	}
+	.instagram-img {
+		width: 47px;
+		height: 47px;
+	}
+}
+@media only screen and (max-width: 1380px) {
+	.wrapper-header {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.about-us {
+		width: 500px;
+		height: 315px;
+		border-radius: 95px 95px 95px 45px;
+	}
+	.about-title {
+		padding-left: 145px;
+	}
+	.about-subtitle {
+		width: 465px;
+		height: 180px;
+	}
+	.contact {
+		margin-left: 15px;
+	}
+}
+@media only screen and (max-width: 1140px) {
+	.wrapper-main {
+		align-items: center;
+		flex-direction: column;
+	}
+	.about-us {
+		margin-left: 0px;
+		padding: 0px 25px 15px 25px;
+		border-radius: 95px 95px 45px 45px;
+	}
+	.product {
+		align-items: center;
+		margin-top: 20px;
+	}
+	.product-title-bg {
+		margin: 0px;
+		border-radius: 35px 50px 35px 50px
+	}
+	.wrapper-pic {
+		flex-wrap: wrap;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		margin-right: 0px;
+	}
+	.product-item-new-york {
+		border-radius: 0px 55px 0px 0px;
+	}
+	.contact {
+		margin-top: 1000px;
+	}
+	.footer {
+		margin-top: 550px;
+	}
+}
+@media only screen and (max-width: 840px) {
+	.wrapper-header {
+		flex-wrap: wrap;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 700px){
+	.intro-title {
+		font-size: 76px;
+	}
+	.intro-subtitle {
+		font-size: 36px;
+	}
+	.intro-button-img {
+		height: 60px;
+		width: 240px;
+	}
+	.product-item-tokio {
+		width: 175px;
+		height: 263px;
+	}
+	.product-item-new-york {
+		width: 175px;
+		height: 263px;
+	}
+	.product-item-sweden {
+		width: 360px;
+		height: 241px;
+	}
+	.contact {
+		margin-top: 690px;
+	}
+	.wrapper-header {
+		flex-wrap: wrap;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	.intro-title {
+		width: fit-content;
+	}
+	.intro-subtitle {
+		width: fit-content;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 570px) {
+	.nav-item-link {
+		font-size: 18px;
+	}
+	.intro-title {
+		font-size: 56px;
+	}
+	.intro-subtitle {
+		font-size: 26px;
+	}
+	.about-title {
+		width: fit-content;
+		padding-left: 110px;
+	}
+	.about-subtitle {
+		width: 374px;
+		height: 250px;
+	}
+	.about-us {
+		width: 420px;
+		height: 365px;
+	}
+	.contact {
+		margin: 0 auto;
+		margin-top: 690px;
+	}
+	.contact-title {
+		width: fit-content;
+		padding: 0;
+		padding-left: 100px;
+		padding-top: 15px;
+	}
+	.contact-input {
+		width: 260px;
+	}
+	.contact-list {
+		width: 325px;
+	}
+	.contact-button {
+		margin: 10px 25px 10px 40px;
+	}
+}
+
+/* End page*/
