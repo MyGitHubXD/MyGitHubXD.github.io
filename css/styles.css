@@ -865,6 +865,7 @@ body {
 	.about-us {
 		width: 375px;
 		height: 365px;
+		padding: 0px;
 	}
 	.contact {
 		margin: 0 auto;
