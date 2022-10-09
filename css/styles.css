@@ -842,6 +842,9 @@ body {
 	}
 }
 @media only screen and (max-width: 570px) {
+	.wrapper=header {
+	        padding-left: 0px;
+	}
 	.nav-item-link {
 		font-size: 18px;
 	}
